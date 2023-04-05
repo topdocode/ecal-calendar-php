@@ -1,9 +1,9 @@
 {
-    "name": "topdocode/ecal-calendar-php",
+    "name": "topdocode/hello-world-package",
     "description": "A hello world composer private package.",
     "autoload": {
         "psr-4": {
-            "topdocode\\Ecal-calendar\\": "src/"
+            "YourGithubUserName\\HelloWorldPackage\\": "src/"
         }
     },
     "minimum-stability": "dev",
