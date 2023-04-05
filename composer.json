@@ -3,7 +3,7 @@
     "description": "A hello world composer private package.",
     "autoload": {
         "psr-4": {
-            "YourGithubUserName\\HelloWorldPackage\\": "src/"
+            "topdocode\\Ecal-calendar\\": "src/"
         }
     },
     "minimum-stability": "dev",
