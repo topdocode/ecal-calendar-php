@@ -1,11 +1,23 @@
 {
-    "name": "topdocode/hello-world-package",
-    "description": "A hello world composer private package.",
+    "name": "topdocode/ecal-calendar",
+    "description": "php for request api for ecal calendar",
+    "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
-            "topdocode\\ecal-calendar-php\\": "src/"
+            "Topdocode\\EcalCalendar\\": "src/"
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    "authors": [
+        {
+            "name": "topdocode",
+            "email": "topdocode@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit" : "^9.5"
+    }
+
 }
