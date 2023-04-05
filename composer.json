@@ -1,0 +1,11 @@
+{
+    "name": "your-github-username/hello-world-package",
+    "description": "A hello world composer private package.",
+    "autoload": {
+        "psr-4": {
+            "YourGithubUserName\\HelloWorldPackage\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
