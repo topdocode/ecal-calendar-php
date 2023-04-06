@@ -1,6 +1,6 @@
 {
     "name": "topdocode/ecal-calendar",
-    "description": "php for request api for ecal calendar",
+    "description": "this library for ecal request API",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -10,14 +10,10 @@
     },
     "authors": [
         {
-            "name": "topdocode",
-            "email": "topdocode@gmail.com"
+            "name": "fajarprayoga",
+            "email": "fajarprayoga23@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
-    "require": {},
-    "require-dev": {
-        "phpunit/phpunit" : "^9.5"
-    }
-
+    "minimum-stability": "dev",
+    "require": {}
 }
