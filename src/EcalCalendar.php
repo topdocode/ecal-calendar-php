@@ -13,11 +13,11 @@ class EcalCalendar
 
     public string $apiSign = "";
     public $client; 
-    function __construct (){
+    function __construct ($apiKey, $apiSecret){
         // $this->apiKey = config('app.ecal.api_key');
         // $this->apiSecret = config('app.ecal.api_secret');
-        $this->apiKey = 'kJmQZLnEKo3M9GyspZuXdPFZoqZswa2mEn6DS92AW864127b44';
-        $this->apiSecret = 'amtFVWxIY2dFUUJDTkh4bnBJYmx6bnZq';
+        $this->apiKey = $apiKey;
+        $this->apiSecret = $apiSecret;
         $this->client = new Client(
             [
                 'headers' => [
