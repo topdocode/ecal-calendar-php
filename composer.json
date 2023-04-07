@@ -1,6 +1,6 @@
 {
     "name": "topdocode/ecal-calendar",
-    "description": "this library for ecal request API",
+    "description": "Hi this library for you want to sync data to google Calendar, iCloud Calendar, Outlook, Office and other calendars by using Ecal Calendar. It can also be used as booking appoitment",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -12,6 +12,10 @@
         {
             "name": "fajarprayoga",
             "email": "fajarprayoga23@gmail.com"
+        },
+        {
+            "name": "topdocode",
+            "email": "topdocode@gmail.com"
         }
     ],
     "minimum-stability": "dev",
