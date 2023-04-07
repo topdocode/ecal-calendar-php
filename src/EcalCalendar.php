@@ -3,7 +3,6 @@
 namespace Topdocode\EcalCalendar;
 require 'vendor/autoload.php';
 use GuzzleHttp\Client;
-use Topdocode\EcalCalendar\API\Http;
 
 class EcalCalendar
  {
