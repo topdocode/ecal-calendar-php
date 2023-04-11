@@ -1,7 +1,9 @@
 # ecal-calendar-php
+
 this package for you using ecal calendar 
 
 #how to install 
+
 composer require topdocode/ecal-calendar-php
 
 Example to use
