@@ -78,7 +78,7 @@ class EcalCalendar
         return "https://api.ecal.com/apiv2/".$type."apiKey=".$this->apiKey."&apiSign=".$apiSign.$params;
     }
 
-    public function getCalendar($filter=[])
+    public function getCalendar($filter=[], $id=null)
     {
         // this data for try
         // $filter = [
@@ -86,23 +86,12 @@ class EcalCalendar
         // ];
 
         // $response = Http::get($this->callAPI('calendar',null,$filter));
-        $response = $this->client->get( $this->callAPI('calendar',null,$filter));
+        $response = $this->client->get( $this->callAPI('calendar',$id,$filter));
         
         return [
             'data' =>json_decode($response->getBody()->getContents())->data,
             'status' => $response->getStatusCode(),
         ];
-    }
-
-    public function getCalendarById($filter=[], $id)
-    {
-        // this data for try
-        // $filter = [
-        //     'showDraft' => 1
-        // ];
-
-        $response = $this->client->get($this->callAPI('calendar',$id,$filter));
-        return json_decode($response->getBody()->getContents(), true);
     }
 
     public function createCalendar($data = [])
@@ -133,7 +122,7 @@ class EcalCalendar
         return  $response;  
     }
 
-    public function getEvent($filter=[])
+    public function getEvent($filter=[], $id=null)
     {
         // this data fr try
         // $filter = [
@@ -142,7 +131,7 @@ class EcalCalendar
         //     'showPastEvents' => 'true',
         //     // 'startDate' => '2022-11-20'
         // ];
-        $response = $this->client->get($this->callAPI('event',null,$filter));
+        $response = $this->client->get($this->callAPI('event',$id,$filter));
         return $response;
     }
 
@@ -169,8 +158,15 @@ class EcalCalendar
         return  $response;  
     }
 
-    public function deleteCalendar()
+    public function deleteCalendar($id)
     {
-        
+        $response = $this->client->get($this->callAPI('calendar',$id));
+        return json_decode($response->getBody()->getContents(), true);
+    }
+
+    public function deleteEvent($id)
+    {
+        $response = $this->client->get($this->callAPI('event',$id));
+        return json_decode($response->getBody()->getContents(), true);
     }
 }
