@@ -169,8 +169,8 @@ class EcalCalendar
         return  $response;  
     }
 
-    // public function deleteCalendar()
-    // {
+    public function deleteCalendar()
+    {
         
-    // }
+    }
 }
